@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.barui.dokkos">
-    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
@@ -11,20 +12,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icond"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Hacking"></activity>
         <activity
-            android:name=".DokkOS"
-            android:screenOrientation="landscape">
+            android:name=".Client"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".Character"
+            android:screenOrientation="sensorPortrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HackScreen"
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".DokkOS"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".HackScreen"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>
