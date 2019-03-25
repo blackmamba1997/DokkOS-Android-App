@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/check_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FFFF00"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기다리는  "
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="| FDMA     "
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textViewc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:text="Redmi Note 3"
+        android:textColor="@android:color/background_light" />
+
+</LinearLayout>
